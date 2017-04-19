@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-deep-diff/deep-diff/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-deep-diff/node_modules/deep-diff/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-deep-diff">npmtest-deep-diff (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-deep-diff/deep-diff/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-deep-diff/node_modules/deep-diff/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">14.88% <small>(32 / 215)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-deep-diff/deep-diff/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-deep-diff/node_modules/deep-diff/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -1066,38 +1064,38 @@
  */
 ;(function(root, factory) {
   'use strict';
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof define === 'function' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >define.amd)</span> {
+  <span class="missing-if-branch" title="if path not taken">I</span>if (typeof define === 'function' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered">define.amd)</span> {
     // AMD. Register as an anonymous module.
-<span class="cstat-no" title="statement not covered" >    define([], <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >      return factory();</span>
+<span class="cstat-no" title="statement not covered">    define([], <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">      return factory();</span>
     });
-  } else <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof exports === 'object') {
+  } else <span class="missing-if-branch" title="else path not taken">E</span>if (typeof exports === 'object') {
     // Node. Does not work with strict CommonJS, but
     // only CommonJS-like environments that support module.exports,
     // like Node.
     module.exports = factory();
   } else {
     // Browser globals (root is window)
-<span class="cstat-no" title="statement not covered" >    root.DeepDiff = factory();</span>
+<span class="cstat-no" title="statement not covered">    root.DeepDiff = factory();</span>
   }
 }(this, function(undefined) {
   'use strict';
 &nbsp;
   var $scope, conflict, conflictResolution = [];
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof global === 'object' &amp;&amp; global) {
+  <span class="missing-if-branch" title="else path not taken">E</span>if (typeof global === 'object' &amp;&amp; global) {
     $scope = global;
-  } else <span class="cstat-no" title="statement not covered" >if (typeof window !== 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >    $scope = window;</span>
+  } else <span class="cstat-no" title="statement not covered">if (typeof window !== 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">    $scope = window;</span>
   } else {
-<span class="cstat-no" title="statement not covered" >    $scope = {};</span>
+<span class="cstat-no" title="statement not covered">    $scope = {};</span>
   }
   conflict = $scope.DeepDiff;
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (conflict) {
-<span class="cstat-no" title="statement not covered" >    conflictResolution.push(</span>
-<span class="fstat-no" title="function not covered" >      function() {</span>
-<span class="cstat-no" title="statement not covered" >        if ('undefined' !== typeof conflict &amp;&amp; $scope.DeepDiff === accumulateDiff) {</span>
-<span class="cstat-no" title="statement not covered" >          $scope.DeepDiff = conflict;</span>
-<span class="cstat-no" title="statement not covered" >          conflict = undefined;</span>
+  <span class="missing-if-branch" title="if path not taken">I</span>if (conflict) {
+<span class="cstat-no" title="statement not covered">    conflictResolution.push(</span>
+<span class="fstat-no" title="function not covered">      function() {</span>
+<span class="cstat-no" title="statement not covered">        if ('undefined' !== typeof conflict &amp;&amp; $scope.DeepDiff === accumulateDiff) {</span>
+<span class="cstat-no" title="statement not covered">          $scope.DeepDiff = conflict;</span>
+<span class="cstat-no" title="statement not covered">          conflict = undefined;</span>
         }
       });
   }
@@ -1115,326 +1113,326 @@
     });
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function Diff(kind, path) {</span>
-<span class="cstat-no" title="statement not covered" >    Object.defineProperty(this, 'kind', {</span>
+<span class="fstat-no" title="function not covered">  function Diff(kind, path) {</span>
+<span class="cstat-no" title="statement not covered">    Object.defineProperty(this, 'kind', {</span>
       value: kind,
       enumerable: true
     });
-<span class="cstat-no" title="statement not covered" >    if (path &amp;&amp; path.length) {</span>
-<span class="cstat-no" title="statement not covered" >      Object.defineProperty(this, 'path', {</span>
+<span class="cstat-no" title="statement not covered">    if (path &amp;&amp; path.length) {</span>
+<span class="cstat-no" title="statement not covered">      Object.defineProperty(this, 'path', {</span>
         value: path,
         enumerable: true
       });
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function DiffEdit(path, origin, value) {</span>
-<span class="cstat-no" title="statement not covered" >    DiffEdit.super_.call(this, 'E', path);</span>
-<span class="cstat-no" title="statement not covered" >    Object.defineProperty(this, 'lhs', {</span>
+<span class="fstat-no" title="function not covered">  function DiffEdit(path, origin, value) {</span>
+<span class="cstat-no" title="statement not covered">    DiffEdit.super_.call(this, 'E', path);</span>
+<span class="cstat-no" title="statement not covered">    Object.defineProperty(this, 'lhs', {</span>
       value: origin,
       enumerable: true
     });
-<span class="cstat-no" title="statement not covered" >    Object.defineProperty(this, 'rhs', {</span>
+<span class="cstat-no" title="statement not covered">    Object.defineProperty(this, 'rhs', {</span>
       value: value,
       enumerable: true
     });
   }
   inherits(DiffEdit, Diff);
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function DiffNew(path, value) {</span>
-<span class="cstat-no" title="statement not covered" >    DiffNew.super_.call(this, 'N', path);</span>
-<span class="cstat-no" title="statement not covered" >    Object.defineProperty(this, 'rhs', {</span>
+<span class="fstat-no" title="function not covered">  function DiffNew(path, value) {</span>
+<span class="cstat-no" title="statement not covered">    DiffNew.super_.call(this, 'N', path);</span>
+<span class="cstat-no" title="statement not covered">    Object.defineProperty(this, 'rhs', {</span>
       value: value,
       enumerable: true
     });
   }
   inherits(DiffNew, Diff);
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function DiffDeleted(path, value) {</span>
-<span class="cstat-no" title="statement not covered" >    DiffDeleted.super_.call(this, 'D', path);</span>
-<span class="cstat-no" title="statement not covered" >    Object.defineProperty(this, 'lhs', {</span>
+<span class="fstat-no" title="function not covered">  function DiffDeleted(path, value) {</span>
+<span class="cstat-no" title="statement not covered">    DiffDeleted.super_.call(this, 'D', path);</span>
+<span class="cstat-no" title="statement not covered">    Object.defineProperty(this, 'lhs', {</span>
       value: value,
       enumerable: true
     });
   }
   inherits(DiffDeleted, Diff);
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function DiffArray(path, index, item) {</span>
-<span class="cstat-no" title="statement not covered" >    DiffArray.super_.call(this, 'A', path);</span>
-<span class="cstat-no" title="statement not covered" >    Object.defineProperty(this, 'index', {</span>
+<span class="fstat-no" title="function not covered">  function DiffArray(path, index, item) {</span>
+<span class="cstat-no" title="statement not covered">    DiffArray.super_.call(this, 'A', path);</span>
+<span class="cstat-no" title="statement not covered">    Object.defineProperty(this, 'index', {</span>
       value: index,
       enumerable: true
     });
-<span class="cstat-no" title="statement not covered" >    Object.defineProperty(this, 'item', {</span>
+<span class="cstat-no" title="statement not covered">    Object.defineProperty(this, 'item', {</span>
       value: item,
       enumerable: true
     });
   }
   inherits(DiffArray, Diff);
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function arrayRemove(arr, from, to) {</span>
-<span class="cstat-no" title="statement not covered" >    var rest = arr.slice((to || from) + 1 || arr.length);</span>
-<span class="cstat-no" title="statement not covered" >    arr.length = from &lt; 0 ? arr.length + from : from;</span>
-<span class="cstat-no" title="statement not covered" >    arr.push.apply(arr, rest);</span>
-<span class="cstat-no" title="statement not covered" >    return arr;</span>
+<span class="fstat-no" title="function not covered">  function arrayRemove(arr, from, to) {</span>
+<span class="cstat-no" title="statement not covered">    var rest = arr.slice((to || from) + 1 || arr.length);</span>
+<span class="cstat-no" title="statement not covered">    arr.length = from &lt; 0 ? arr.length + from : from;</span>
+<span class="cstat-no" title="statement not covered">    arr.push.apply(arr, rest);</span>
+<span class="cstat-no" title="statement not covered">    return arr;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function realTypeOf(subject) {</span>
-<span class="cstat-no" title="statement not covered" >    var type = typeof subject;</span>
-<span class="cstat-no" title="statement not covered" >    if (type !== 'object') {</span>
-<span class="cstat-no" title="statement not covered" >      return type;</span>
+<span class="fstat-no" title="function not covered">  function realTypeOf(subject) {</span>
+<span class="cstat-no" title="statement not covered">    var type = typeof subject;</span>
+<span class="cstat-no" title="statement not covered">    if (type !== 'object') {</span>
+<span class="cstat-no" title="statement not covered">      return type;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (subject === Math) {</span>
-<span class="cstat-no" title="statement not covered" >      return 'math';</span>
-    } else <span class="cstat-no" title="statement not covered" >if (subject === null) {</span>
-<span class="cstat-no" title="statement not covered" >      return 'null';</span>
-    } else <span class="cstat-no" title="statement not covered" >if (Array.isArray(subject)) {</span>
-<span class="cstat-no" title="statement not covered" >      return 'array';</span>
-    } else <span class="cstat-no" title="statement not covered" >if (Object.prototype.toString.call(subject) === '[object Date]') {</span>
-<span class="cstat-no" title="statement not covered" >      return 'date';</span>
-    } else <span class="cstat-no" title="statement not covered" >if (typeof subject.toString !== 'undefined' &amp;&amp; /^\/.*\//.test(subject.toString())) {</span>
-<span class="cstat-no" title="statement not covered" >      return 'regexp';</span>
+<span class="cstat-no" title="statement not covered">    if (subject === Math) {</span>
+<span class="cstat-no" title="statement not covered">      return 'math';</span>
+    } else <span class="cstat-no" title="statement not covered">if (subject === null) {</span>
+<span class="cstat-no" title="statement not covered">      return 'null';</span>
+    } else <span class="cstat-no" title="statement not covered">if (Array.isArray(subject)) {</span>
+<span class="cstat-no" title="statement not covered">      return 'array';</span>
+    } else <span class="cstat-no" title="statement not covered">if (Object.prototype.toString.call(subject) === '[object Date]') {</span>
+<span class="cstat-no" title="statement not covered">      return 'date';</span>
+    } else <span class="cstat-no" title="statement not covered">if (typeof subject.toString !== 'undefined' &amp;&amp; /^\/.*\//.test(subject.toString())) {</span>
+<span class="cstat-no" title="statement not covered">      return 'regexp';</span>
     }
-<span class="cstat-no" title="statement not covered" >    return 'object';</span>
+<span class="cstat-no" title="statement not covered">    return 'object';</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function deepDiff(lhs, rhs, changes, prefilter, path, key, stack) {</span>
-<span class="cstat-no" title="statement not covered" >    path = path || [];</span>
-<span class="cstat-no" title="statement not covered" >    var currentPath = path.slice(0);</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof key !== 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >      if (prefilter) {</span>
-<span class="cstat-no" title="statement not covered" >        if (typeof(prefilter) === 'function' &amp;&amp; prefilter(currentPath, key)) { <span class="cstat-no" title="statement not covered" >return; </span>}</span>
-        else <span class="cstat-no" title="statement not covered" >if (typeof(prefilter) === 'object') {</span>
-<span class="cstat-no" title="statement not covered" >          if (prefilter.prefilter &amp;&amp; prefilter.prefilter(currentPath, key)) { <span class="cstat-no" title="statement not covered" >return; </span>}</span>
-<span class="cstat-no" title="statement not covered" >          if (prefilter.normalize) {</span>
-<span class="cstat-no" title="statement not covered" >            var alt = prefilter.normalize(currentPath, key, lhs, rhs);</span>
-<span class="cstat-no" title="statement not covered" >            if (alt) {</span>
-<span class="cstat-no" title="statement not covered" >              lhs = alt[0];</span>
-<span class="cstat-no" title="statement not covered" >              rhs = alt[1];</span>
+<span class="fstat-no" title="function not covered">  function deepDiff(lhs, rhs, changes, prefilter, path, key, stack) {</span>
+<span class="cstat-no" title="statement not covered">    path = path || [];</span>
+<span class="cstat-no" title="statement not covered">    var currentPath = path.slice(0);</span>
+<span class="cstat-no" title="statement not covered">    if (typeof key !== 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">      if (prefilter) {</span>
+<span class="cstat-no" title="statement not covered">        if (typeof(prefilter) === 'function' &amp;&amp; prefilter(currentPath, key)) { <span class="cstat-no" title="statement not covered">return; </span>}</span>
+        else <span class="cstat-no" title="statement not covered">if (typeof(prefilter) === 'object') {</span>
+<span class="cstat-no" title="statement not covered">          if (prefilter.prefilter &amp;&amp; prefilter.prefilter(currentPath, key)) { <span class="cstat-no" title="statement not covered">return; </span>}</span>
+<span class="cstat-no" title="statement not covered">          if (prefilter.normalize) {</span>
+<span class="cstat-no" title="statement not covered">            var alt = prefilter.normalize(currentPath, key, lhs, rhs);</span>
+<span class="cstat-no" title="statement not covered">            if (alt) {</span>
+<span class="cstat-no" title="statement not covered">              lhs = alt[0];</span>
+<span class="cstat-no" title="statement not covered">              rhs = alt[1];</span>
             }
           }
         }
       }
-<span class="cstat-no" title="statement not covered" >      currentPath.push(key);</span>
+<span class="cstat-no" title="statement not covered">      currentPath.push(key);</span>
     }
 &nbsp;
     // Use string comparison for regexes
-<span class="cstat-no" title="statement not covered" >    if (realTypeOf(lhs) === 'regexp' &amp;&amp; realTypeOf(rhs) === 'regexp') {</span>
-<span class="cstat-no" title="statement not covered" >      lhs = lhs.toString();</span>
-<span class="cstat-no" title="statement not covered" >      rhs = rhs.toString();</span>
+<span class="cstat-no" title="statement not covered">    if (realTypeOf(lhs) === 'regexp' &amp;&amp; realTypeOf(rhs) === 'regexp') {</span>
+<span class="cstat-no" title="statement not covered">      lhs = lhs.toString();</span>
+<span class="cstat-no" title="statement not covered">      rhs = rhs.toString();</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var ltype = typeof lhs;</span>
-<span class="cstat-no" title="statement not covered" >    var rtype = typeof rhs;</span>
-<span class="cstat-no" title="statement not covered" >    if (ltype === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >      if (rtype !== 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >        changes(new DiffNew(currentPath, rhs));</span>
+<span class="cstat-no" title="statement not covered">    var ltype = typeof lhs;</span>
+<span class="cstat-no" title="statement not covered">    var rtype = typeof rhs;</span>
+<span class="cstat-no" title="statement not covered">    if (ltype === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">      if (rtype !== 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">        changes(new DiffNew(currentPath, rhs));</span>
       }
-    } else <span class="cstat-no" title="statement not covered" >if (rtype === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >      changes(new DiffDeleted(currentPath, lhs));</span>
-    } else <span class="cstat-no" title="statement not covered" >if (realTypeOf(lhs) !== realTypeOf(rhs)) {</span>
-<span class="cstat-no" title="statement not covered" >      changes(new DiffEdit(currentPath, lhs, rhs));</span>
-    } else <span class="cstat-no" title="statement not covered" >if (Object.prototype.toString.call(lhs) === '[object Date]' &amp;&amp; Object.prototype.toString.call(rhs) === '[object Date]' &amp;&amp; ((lhs - rhs) !== 0)) {</span>
-<span class="cstat-no" title="statement not covered" >      changes(new DiffEdit(currentPath, lhs, rhs));</span>
-    } else <span class="cstat-no" title="statement not covered" >if (ltype === 'object' &amp;&amp; lhs !== null &amp;&amp; rhs !== null) {</span>
-<span class="cstat-no" title="statement not covered" >      stack = stack || [];</span>
-<span class="cstat-no" title="statement not covered" >      if (stack.indexOf(lhs) &lt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >        stack.push(lhs);</span>
-<span class="cstat-no" title="statement not covered" >        if (Array.isArray(lhs)) {</span>
-<span class="cstat-no" title="statement not covered" >          var i, len = lhs.length;</span>
-<span class="cstat-no" title="statement not covered" >          for (i = 0; i &lt; lhs.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >            if (i &gt;= rhs.length) {</span>
-<span class="cstat-no" title="statement not covered" >              changes(new DiffArray(currentPath, i, new DiffDeleted(undefined, lhs[i])));</span>
+    } else <span class="cstat-no" title="statement not covered">if (rtype === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">      changes(new DiffDeleted(currentPath, lhs));</span>
+    } else <span class="cstat-no" title="statement not covered">if (realTypeOf(lhs) !== realTypeOf(rhs)) {</span>
+<span class="cstat-no" title="statement not covered">      changes(new DiffEdit(currentPath, lhs, rhs));</span>
+    } else <span class="cstat-no" title="statement not covered">if (Object.prototype.toString.call(lhs) === '[object Date]' &amp;&amp; Object.prototype.toString.call(rhs) === '[object Date]' &amp;&amp; ((lhs - rhs) !== 0)) {</span>
+<span class="cstat-no" title="statement not covered">      changes(new DiffEdit(currentPath, lhs, rhs));</span>
+    } else <span class="cstat-no" title="statement not covered">if (ltype === 'object' &amp;&amp; lhs !== null &amp;&amp; rhs !== null) {</span>
+<span class="cstat-no" title="statement not covered">      stack = stack || [];</span>
+<span class="cstat-no" title="statement not covered">      if (stack.indexOf(lhs) &lt; 0) {</span>
+<span class="cstat-no" title="statement not covered">        stack.push(lhs);</span>
+<span class="cstat-no" title="statement not covered">        if (Array.isArray(lhs)) {</span>
+<span class="cstat-no" title="statement not covered">          var i, len = lhs.length;</span>
+<span class="cstat-no" title="statement not covered">          for (i = 0; i &lt; lhs.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">            if (i &gt;= rhs.length) {</span>
+<span class="cstat-no" title="statement not covered">              changes(new DiffArray(currentPath, i, new DiffDeleted(undefined, lhs[i])));</span>
             } else {
-<span class="cstat-no" title="statement not covered" >              deepDiff(lhs[i], rhs[i], changes, prefilter, currentPath, i, stack);</span>
+<span class="cstat-no" title="statement not covered">              deepDiff(lhs[i], rhs[i], changes, prefilter, currentPath, i, stack);</span>
             }
           }
-<span class="cstat-no" title="statement not covered" >          while (i &lt; rhs.length) {</span>
-<span class="cstat-no" title="statement not covered" >            changes(new DiffArray(currentPath, i, new DiffNew(undefined, rhs[i++])));</span>
+<span class="cstat-no" title="statement not covered">          while (i &lt; rhs.length) {</span>
+<span class="cstat-no" title="statement not covered">            changes(new DiffArray(currentPath, i, new DiffNew(undefined, rhs[i++])));</span>
           }
         } else {
-<span class="cstat-no" title="statement not covered" >          var akeys = Object.keys(lhs);</span>
-<span class="cstat-no" title="statement not covered" >          var pkeys = Object.keys(rhs);</span>
-<span class="cstat-no" title="statement not covered" >          akeys.forEach(<span class="fstat-no" title="function not covered" >function(k, i) {</span></span>
-<span class="cstat-no" title="statement not covered" >            var other = pkeys.indexOf(k);</span>
-<span class="cstat-no" title="statement not covered" >            if (other &gt;= 0) {</span>
-<span class="cstat-no" title="statement not covered" >              deepDiff(lhs[k], rhs[k], changes, prefilter, currentPath, k, stack);</span>
-<span class="cstat-no" title="statement not covered" >              pkeys = arrayRemove(pkeys, other);</span>
+<span class="cstat-no" title="statement not covered">          var akeys = Object.keys(lhs);</span>
+<span class="cstat-no" title="statement not covered">          var pkeys = Object.keys(rhs);</span>
+<span class="cstat-no" title="statement not covered">          akeys.forEach(<span class="fstat-no" title="function not covered">function(k, i) {</span></span>
+<span class="cstat-no" title="statement not covered">            var other = pkeys.indexOf(k);</span>
+<span class="cstat-no" title="statement not covered">            if (other &gt;= 0) {</span>
+<span class="cstat-no" title="statement not covered">              deepDiff(lhs[k], rhs[k], changes, prefilter, currentPath, k, stack);</span>
+<span class="cstat-no" title="statement not covered">              pkeys = arrayRemove(pkeys, other);</span>
             } else {
-<span class="cstat-no" title="statement not covered" >              deepDiff(lhs[k], undefined, changes, prefilter, currentPath, k, stack);</span>
+<span class="cstat-no" title="statement not covered">              deepDiff(lhs[k], undefined, changes, prefilter, currentPath, k, stack);</span>
             }
           });
-<span class="cstat-no" title="statement not covered" >          pkeys.forEach(<span class="fstat-no" title="function not covered" >function(k) {</span></span>
-<span class="cstat-no" title="statement not covered" >            deepDiff(undefined, rhs[k], changes, prefilter, currentPath, k, stack);</span>
+<span class="cstat-no" title="statement not covered">          pkeys.forEach(<span class="fstat-no" title="function not covered">function(k) {</span></span>
+<span class="cstat-no" title="statement not covered">            deepDiff(undefined, rhs[k], changes, prefilter, currentPath, k, stack);</span>
           });
         }
-<span class="cstat-no" title="statement not covered" >        stack.length = stack.length - 1;</span>
+<span class="cstat-no" title="statement not covered">        stack.length = stack.length - 1;</span>
       }
-    } else <span class="cstat-no" title="statement not covered" >if (lhs !== rhs) {</span>
-<span class="cstat-no" title="statement not covered" >      if (!(ltype === 'number' &amp;&amp; isNaN(lhs) &amp;&amp; isNaN(rhs))) {</span>
-<span class="cstat-no" title="statement not covered" >        changes(new DiffEdit(currentPath, lhs, rhs));</span>
+    } else <span class="cstat-no" title="statement not covered">if (lhs !== rhs) {</span>
+<span class="cstat-no" title="statement not covered">      if (!(ltype === 'number' &amp;&amp; isNaN(lhs) &amp;&amp; isNaN(rhs))) {</span>
+<span class="cstat-no" title="statement not covered">        changes(new DiffEdit(currentPath, lhs, rhs));</span>
       }
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function accumulateDiff(lhs, rhs, prefilter, accum) {</span>
-<span class="cstat-no" title="statement not covered" >    accum = accum || [];</span>
-<span class="cstat-no" title="statement not covered" >    deepDiff(lhs, rhs,</span>
-<span class="fstat-no" title="function not covered" >      function(diff) {</span>
-<span class="cstat-no" title="statement not covered" >        if (diff) {</span>
-<span class="cstat-no" title="statement not covered" >          accum.push(diff);</span>
+<span class="fstat-no" title="function not covered">  function accumulateDiff(lhs, rhs, prefilter, accum) {</span>
+<span class="cstat-no" title="statement not covered">    accum = accum || [];</span>
+<span class="cstat-no" title="statement not covered">    deepDiff(lhs, rhs,</span>
+<span class="fstat-no" title="function not covered">      function(diff) {</span>
+<span class="cstat-no" title="statement not covered">        if (diff) {</span>
+<span class="cstat-no" title="statement not covered">          accum.push(diff);</span>
         }
       },
       prefilter);
-<span class="cstat-no" title="statement not covered" >    return (accum.length) ? accum : undefined;</span>
+<span class="cstat-no" title="statement not covered">    return (accum.length) ? accum : undefined;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function applyArrayChange(arr, index, change) {</span>
-<span class="cstat-no" title="statement not covered" >    if (change.path &amp;&amp; change.path.length) {</span>
-<span class="cstat-no" title="statement not covered" >      var it = arr[index],</span>
+<span class="fstat-no" title="function not covered">  function applyArrayChange(arr, index, change) {</span>
+<span class="cstat-no" title="statement not covered">    if (change.path &amp;&amp; change.path.length) {</span>
+<span class="cstat-no" title="statement not covered">      var it = arr[index],</span>
           i, u = change.path.length - 1;
-<span class="cstat-no" title="statement not covered" >      for (i = 0; i &lt; u; i++) {</span>
-<span class="cstat-no" title="statement not covered" >        it = it[change.path[i]];</span>
+<span class="cstat-no" title="statement not covered">      for (i = 0; i &lt; u; i++) {</span>
+<span class="cstat-no" title="statement not covered">        it = it[change.path[i]];</span>
       }
-<span class="cstat-no" title="statement not covered" >      switch (change.kind) {</span>
+<span class="cstat-no" title="statement not covered">      switch (change.kind) {</span>
         case 'A':
-<span class="cstat-no" title="statement not covered" >          applyArrayChange(it[change.path[i]], change.index, change.item);</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          applyArrayChange(it[change.path[i]], change.index, change.item);</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'D':
-<span class="cstat-no" title="statement not covered" >          delete it[change.path[i]];</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          delete it[change.path[i]];</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'E':
         case 'N':
-<span class="cstat-no" title="statement not covered" >          it[change.path[i]] = change.rhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          it[change.path[i]] = change.rhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
       }
     } else {
-<span class="cstat-no" title="statement not covered" >      switch (change.kind) {</span>
+<span class="cstat-no" title="statement not covered">      switch (change.kind) {</span>
         case 'A':
-<span class="cstat-no" title="statement not covered" >          applyArrayChange(arr[index], change.index, change.item);</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          applyArrayChange(arr[index], change.index, change.item);</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'D':
-<span class="cstat-no" title="statement not covered" >          arr = arrayRemove(arr, index);</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          arr = arrayRemove(arr, index);</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'E':
         case 'N':
-<span class="cstat-no" title="statement not covered" >          arr[index] = change.rhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          arr[index] = change.rhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
       }
     }
-<span class="cstat-no" title="statement not covered" >    return arr;</span>
+<span class="cstat-no" title="statement not covered">    return arr;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function applyChange(target, source, change) {</span>
-<span class="cstat-no" title="statement not covered" >    if (target &amp;&amp; source &amp;&amp; change &amp;&amp; change.kind) {</span>
-<span class="cstat-no" title="statement not covered" >      var it = target,</span>
+<span class="fstat-no" title="function not covered">  function applyChange(target, source, change) {</span>
+<span class="cstat-no" title="statement not covered">    if (target &amp;&amp; source &amp;&amp; change &amp;&amp; change.kind) {</span>
+<span class="cstat-no" title="statement not covered">      var it = target,</span>
           i = -1,
           last = change.path ? change.path.length - 1 : 0;
-<span class="cstat-no" title="statement not covered" >      while (++i &lt; last) {</span>
-<span class="cstat-no" title="statement not covered" >        if (typeof it[change.path[i]] === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >          it[change.path[i]] = (typeof change.path[i] === 'number') ? [] : {};</span>
+<span class="cstat-no" title="statement not covered">      while (++i &lt; last) {</span>
+<span class="cstat-no" title="statement not covered">        if (typeof it[change.path[i]] === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">          it[change.path[i]] = (typeof change.path[i] === 'number') ? [] : {};</span>
         }
-<span class="cstat-no" title="statement not covered" >        it = it[change.path[i]];</span>
+<span class="cstat-no" title="statement not covered">        it = it[change.path[i]];</span>
       }
-<span class="cstat-no" title="statement not covered" >      switch (change.kind) {</span>
+<span class="cstat-no" title="statement not covered">      switch (change.kind) {</span>
         case 'A':
-<span class="cstat-no" title="statement not covered" >          applyArrayChange(change.path ? it[change.path[i]] : it, change.index, change.item);</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          applyArrayChange(change.path ? it[change.path[i]] : it, change.index, change.item);</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'D':
-<span class="cstat-no" title="statement not covered" >          delete it[change.path[i]];</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          delete it[change.path[i]];</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'E':
         case 'N':
-<span class="cstat-no" title="statement not covered" >          it[change.path[i]] = change.rhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          it[change.path[i]] = change.rhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
       }
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function revertArrayChange(arr, index, change) {</span>
-<span class="cstat-no" title="statement not covered" >    if (change.path &amp;&amp; change.path.length) {</span>
+<span class="fstat-no" title="function not covered">  function revertArrayChange(arr, index, change) {</span>
+<span class="cstat-no" title="statement not covered">    if (change.path &amp;&amp; change.path.length) {</span>
       // the structure of the object at the index has changed...
-<span class="cstat-no" title="statement not covered" >      var it = arr[index],</span>
+<span class="cstat-no" title="statement not covered">      var it = arr[index],</span>
           i, u = change.path.length - 1;
-<span class="cstat-no" title="statement not covered" >      for (i = 0; i &lt; u; i++) {</span>
-<span class="cstat-no" title="statement not covered" >        it = it[change.path[i]];</span>
+<span class="cstat-no" title="statement not covered">      for (i = 0; i &lt; u; i++) {</span>
+<span class="cstat-no" title="statement not covered">        it = it[change.path[i]];</span>
       }
-<span class="cstat-no" title="statement not covered" >      switch (change.kind) {</span>
+<span class="cstat-no" title="statement not covered">      switch (change.kind) {</span>
         case 'A':
-<span class="cstat-no" title="statement not covered" >          revertArrayChange(it[change.path[i]], change.index, change.item);</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          revertArrayChange(it[change.path[i]], change.index, change.item);</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'D':
-<span class="cstat-no" title="statement not covered" >          it[change.path[i]] = change.lhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          it[change.path[i]] = change.lhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'E':
-<span class="cstat-no" title="statement not covered" >          it[change.path[i]] = change.lhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          it[change.path[i]] = change.lhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'N':
-<span class="cstat-no" title="statement not covered" >          delete it[change.path[i]];</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          delete it[change.path[i]];</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
       }
     } else {
       // the array item is different...
-<span class="cstat-no" title="statement not covered" >      switch (change.kind) {</span>
+<span class="cstat-no" title="statement not covered">      switch (change.kind) {</span>
         case 'A':
-<span class="cstat-no" title="statement not covered" >          revertArrayChange(arr[index], change.index, change.item);</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          revertArrayChange(arr[index], change.index, change.item);</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'D':
-<span class="cstat-no" title="statement not covered" >          arr[index] = change.lhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          arr[index] = change.lhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'E':
-<span class="cstat-no" title="statement not covered" >          arr[index] = change.lhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          arr[index] = change.lhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'N':
-<span class="cstat-no" title="statement not covered" >          arr = arrayRemove(arr, index);</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          arr = arrayRemove(arr, index);</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
       }
     }
-<span class="cstat-no" title="statement not covered" >    return arr;</span>
+<span class="cstat-no" title="statement not covered">    return arr;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function revertChange(target, source, change) {</span>
-<span class="cstat-no" title="statement not covered" >    if (target &amp;&amp; source &amp;&amp; change &amp;&amp; change.kind) {</span>
-<span class="cstat-no" title="statement not covered" >      var it = target,</span>
+<span class="fstat-no" title="function not covered">  function revertChange(target, source, change) {</span>
+<span class="cstat-no" title="statement not covered">    if (target &amp;&amp; source &amp;&amp; change &amp;&amp; change.kind) {</span>
+<span class="cstat-no" title="statement not covered">      var it = target,</span>
           i, u;
-<span class="cstat-no" title="statement not covered" >      u = change.path.length - 1;</span>
-<span class="cstat-no" title="statement not covered" >      for (i = 0; i &lt; u; i++) {</span>
-<span class="cstat-no" title="statement not covered" >        if (typeof it[change.path[i]] === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >          it[change.path[i]] = {};</span>
+<span class="cstat-no" title="statement not covered">      u = change.path.length - 1;</span>
+<span class="cstat-no" title="statement not covered">      for (i = 0; i &lt; u; i++) {</span>
+<span class="cstat-no" title="statement not covered">        if (typeof it[change.path[i]] === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">          it[change.path[i]] = {};</span>
         }
-<span class="cstat-no" title="statement not covered" >        it = it[change.path[i]];</span>
+<span class="cstat-no" title="statement not covered">        it = it[change.path[i]];</span>
       }
-<span class="cstat-no" title="statement not covered" >      switch (change.kind) {</span>
+<span class="cstat-no" title="statement not covered">      switch (change.kind) {</span>
         case 'A':
           // Array was modified...
           // it will be an array...
-<span class="cstat-no" title="statement not covered" >          revertArrayChange(it[change.path[i]], change.index, change.item);</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          revertArrayChange(it[change.path[i]], change.index, change.item);</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'D':
           // Item was deleted...
-<span class="cstat-no" title="statement not covered" >          it[change.path[i]] = change.lhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          it[change.path[i]] = change.lhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'E':
           // Item was edited...
-<span class="cstat-no" title="statement not covered" >          it[change.path[i]] = change.lhs;</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          it[change.path[i]] = change.lhs;</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
         case 'N':
           // Item is new...
-<span class="cstat-no" title="statement not covered" >          delete it[change.path[i]];</span>
-<span class="cstat-no" title="statement not covered" >          break;</span>
+<span class="cstat-no" title="statement not covered">          delete it[change.path[i]];</span>
+<span class="cstat-no" title="statement not covered">          break;</span>
       }
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function applyDiff(target, source, filter) {</span>
-<span class="cstat-no" title="statement not covered" >    if (target &amp;&amp; source) {</span>
-<span class="cstat-no" title="statement not covered" >      var onChange = <span class="fstat-no" title="function not covered" >function(change) {</span></span>
-<span class="cstat-no" title="statement not covered" >        if (!filter || filter(target, source, change)) {</span>
-<span class="cstat-no" title="statement not covered" >          applyChange(target, source, change);</span>
+<span class="fstat-no" title="function not covered">  function applyDiff(target, source, filter) {</span>
+<span class="cstat-no" title="statement not covered">    if (target &amp;&amp; source) {</span>
+<span class="cstat-no" title="statement not covered">      var onChange = <span class="fstat-no" title="function not covered">function(change) {</span></span>
+<span class="cstat-no" title="statement not covered">        if (!filter || filter(target, source, change)) {</span>
+<span class="cstat-no" title="statement not covered">          applyChange(target, source, change);</span>
         }
       };
-<span class="cstat-no" title="statement not covered" >      deepDiff(target, source, onChange);</span>
+<span class="cstat-no" title="statement not covered">      deepDiff(target, source, onChange);</span>
     }
   }
 &nbsp;
@@ -1461,20 +1459,20 @@
       enumerable: true
     },
     isConflict: {
-      value: <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >        return 'undefined' !== typeof conflict;</span>
+      value: <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">        return 'undefined' !== typeof conflict;</span>
       },
       enumerable: true
     },
     noConflict: {
-      value: <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >        if (conflictResolution) {</span>
-<span class="cstat-no" title="statement not covered" >          conflictResolution.forEach(<span class="fstat-no" title="function not covered" >function(it) {</span></span>
-<span class="cstat-no" title="statement not covered" >            it();</span>
+      value: <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">        if (conflictResolution) {</span>
+<span class="cstat-no" title="statement not covered">          conflictResolution.forEach(<span class="fstat-no" title="function not covered">function(it) {</span></span>
+<span class="cstat-no" title="statement not covered">            it();</span>
           });
-<span class="cstat-no" title="statement not covered" >          conflictResolution = null;</span>
+<span class="cstat-no" title="statement not covered">          conflictResolution = null;</span>
         }
-<span class="cstat-no" title="statement not covered" >        return accumulateDiff;</span>
+<span class="cstat-no" title="statement not covered">        return accumulateDiff;</span>
       },
       enumerable: true
     }
@@ -1484,10 +1482,11 @@
 }));
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 18:39:06 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 19:50:55 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
